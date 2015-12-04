@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		@charset 'utf-8';
+		body,
+		ul,
+		li {
+			margin: 0;
+			padding: 0;
+		}
+		
+		li {
+			list-style: none;
+		}
+		
+		.tab {
+			width: 600px;
+			margin: 20px auto;
+		}
+		
+		.tab .nav {
+			display: table;
+			/*webkit*/
+			width: 100%;
+			height: 40px;
+			word-spacing: -1em;
+			border: 1px solid #a0b3d6;
+			border-bottom: 0;
+		}
+		
+		.tab .nav li {
+			line-height: 40px;
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+		}
+		
+		.tab .nav a {
+			font-size: 14px;
+			display: block;
+			zoom: 1;
+			padding: 0 30px;
+			color: #34538b;
+			border-right: 1px solid #a0b3d6;
+			background-color: #eaf0fd;
+			*display: inline;
+		}
+		
+		.tab li.seleted a {
+			margin-bottom: -1px;
+			border-bottom: 1px solid #fff;
+			background: #fff;
+			*position: relative;
+			*border: 0;
+			*margin: 0;
+			*bottom: -1px;
+		}
+		
+		.tab li.seleted {
+			*border-right: 1px solid #a0b3d6;
+		}
+		
+		.tab .content {
+			width: 100%;
+			height: 600px;
+			border: 1px solid #a0b3d6;
+		}
+	</style>
+
+	<body>
+		
+			<div class="tab">
+				<ul class="nav">
+					<li class="seleted"><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">技术</a></li>
+					<li><a href="javascript:;">生活</a></li>
+					<li><a href="javascript:;">作品</a></li>
+				</ul>
+				<div class="content">
+					
+				</div>
+			</div>
+	
+		<script type="text/javascript">
+			window.onload = function() {
+				var oTab = document.getElementsByClassName('nav')[0];
+				var oContent=document.getElementsByClassName('content')[0];
+				var aLi = oTab.getElementsByTagName('li');
+				var aA = oTab.getElementsByTagName('a');
+				var aContent = ['首页内容', '技术内容', '生活内容', '作品内容'];
+				var caLi=aLi[0];
+				oContent.innerHTML=aContent[0];
+				 for (var i = 0; i < aA.length; i++) {
+				 	aA[i].onclick =(function(i){
+				 	return function(){ 
+				 			caLi.className='';
+				 			aLi[i].className='seleted';
+				 			caLi=aLi[i];
+				 		oContent.innerHTML=aContent[i];
+				 	}
+				 	
+				 })(i);
+				 }
+				
+			};
+		</script>
+
+	</body>
+
+</html>
