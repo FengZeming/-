@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>text-jusyify下的inline-block自适应列表布局实例页面</title>
+	</head>
+	<style type="text/css">
+		body {
+			margin: 0;
+			background-color: #A0B3D6;
+			font-size: 14px;
+		}
+		
+		h1,
+		h6 {
+			margin: 0;
+		}
+		
+		img {
+			border: 0;
+			vertical-align: middle;
+		}
+		
+		#header {
+			height: 150px;
+			padding-left: 40px;
+			background: #000;
+		}
+		
+		#header .logo {
+			position: absolute;
+			margin-top: 24px;
+		}
+		
+		#main {}
+		
+		#main h1 {
+			line-height: 40px;
+			background-color: #C1D5EB;
+			text-align: center;
+			font-size: 1.3em;
+			font-family: 'kaiti', 'microsoft yahei';
+		}
+		
+		#main .body {
+			background-color: #fff;
+			margin: 0 auto;
+			width: 50%;
+			text-align: justify;
+			padding: 20px 20px 0 20px;
+			
+		}
+		
+		#main .list {
+			display: inline-block;
+			width: 120px;
+			padding-bottom: 20px;
+			text-align: center;
+			vertical-align: top;
+		}
+		
+		#main .list span {
+			width: 96px;
+			display: block;
+			text-align: left;
+			font-size: 14px;
+			margin: 0 auto;
+		}
+		
+		.left_fix {
+			height: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+	</style>
+
+	<body>
+
+		<div id="header">
+			<a class="logo" href="#">
+				<img src="img/dog.jpg" />
+			</a>
+
+		</div>
+
+		<div id="main">
+			<h1>text-jusyify下的inline-block自适应列表布局实例页面 参考张鑫旭:<a href="http://www.zhangxinxu.com/wordpress/2010/11/%E6%8B%9C%E6%8B%9C%E4%BA%86%E6%B5%AE%E5%8A%A8%E5%B8%83%E5%B1%80-%E5%9F%BA%E4%BA%8Edisplayinline-block%E7%9A%84%E5%88%97%E8%A1%A8%E5%B8%83%E5%B1%80/" target="_blank">拜拜了浮动布局-基于displayinline-block的列表布局</a></h1>
+			<div class="body">
+				<div class="box">
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list"><img src="img/mm2.jpg"/><span>美女噢噢噢噢哦哦哦！</span></span>
+					<span class="list left_fix">&nbsp;</span>
+					<span class="list left_fix">&nbsp;</span>
+					<span class="list left_fix">&nbsp;</span>
+					<span class="list left_fix">&nbsp;</span>
+					<span class="list left_fix">&nbsp;</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="footer">
+
+		</div>
+
+	</body>
+
+</html>
