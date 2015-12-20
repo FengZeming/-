@@ -1,0 +1,92 @@
+@charset "utf-8";
+ .watch-box {
+	position: relative;
+	top: 75px;
+	display: inline-block;
+	width: 211px;
+	height: 151px;
+	background: url(homebg.png) no-repeat 0 -150px;
+}
+
+
+/*表盘*/
+
+.watch-box  .clock-dial {
+	border: 7px solid #fff;
+	width: 42px;
+	height: 42px;
+	margin-top: 21px;
+	margin-left: 72px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+}
+
+
+/*时针*/
+
+.watch-box  .clock-pin {
+	position: absolute;
+	left: 50%;
+	margin-left: -2.5px;
+	margin-top: 2px;
+	width: 5px;
+	height: 20px;
+	background: #fff;
+	border-radius: 2px;
+	z-index: 2;
+}
+
+.watch-box  .min-pin {
+	position: absolute;
+	left: 50%;
+	margin-left: -2.5px;
+	margin-top: 2px;
+	width: 5px;
+	height: 20px;
+	background: #fff;
+	border-radius: 2px;
+	animation: css3-watch 20s steps(60, end) infinite;
+	transform-origin: 2.7px 19px;
+}
+
+.watch-box  .clock-oorigin {
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	margin-left: -3px;
+	margin-top: -3px;
+	background: #fff;
+	z-index: 3;
+}
+
+.watch-box  .sec-pin {
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	top: -6px;
+	width: 5px;
+	height: 28px;
+	
+	animation: css3-watch 12s linear infinite;
+	transform-origin: 2.7px 27px;
+	z-index: 4;
+}
+
+.watch-box  .pin {
+	width: 5px;
+	height: 5px;
+	background: #605454;
+	position: absolute;
+	border-radius: 50px;
+	
+}
+
+@-webkit-keyframes css3-watch {
+	to {
+		transform: rotate(360deg);
+	}
+}
