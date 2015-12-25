@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<style type="text/css">
+			body {
+				font: 12px/1.5em arial "宋体";
+			}
+			
+			.weather {
+				width: 655px;
+				margin: 0 auto;
+			}
+			
+			.title {
+				position: relative;
+			}
+			
+			.weather-future,
+			.weather-legend {
+				position: absolute;
+				top: 0;
+				background-color: #E5E5E5;
+				padding: 5px;
+				border: 1px solid #99B0DA;
+			}
+			
+			.weather-future {
+				right: 85px;
+			}
+			.weather-future.none {
+				display: none;
+			}
+			
+			.weather-legend {
+				right: 0px;
+			}
+			
+			
+			
+			.weather-item {
+				background-color: #EBEFF7;
+				padding: 7px;
+			}
+			
+			.item-table {
+				border: 1px solid #99B0DA;
+				border-collapse: collapse;
+				width: 100%;
+				margin-top: 10px;
+			}
+			
+			.item-table th {
+				background-color: #DBE3FA;
+				border: 1px solid #99B0DA;
+				padding: 0 15px;
+				line-height: 27px;
+			}
+			
+			.item-table td {
+				border: 1px solid #99B0DA;
+				background-color: #F4F7FC;
+				line-height: 27px;
+				text-align: center;
+				padding: 0 15px;
+			}
+			
+			#w2 {
+				display: none;
+			}
+			
+			.weather1:target #w2 {
+				display: block;
+			}
+			
+			.weather1:target .weather-future.none {
+				display: inline;
+			}
+			.weather1:target .weather-future {
+				display: none;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+		<div id="ww" class="weather1">
+			<a href="http://www.zhangxinxu.com/wordpress/2013/08/url-anchor-html-%E9%94%9A%E7%82%B9%E5%AE%9A%E4%BD%8D%E6%9C%BA%E5%88%B6-%E5%BA%94%E7%94%A8-%E9%97%AE%E9%A2%98/">学习张鑫旭前辈的文章自己写了一个加强印象 </a>
+			<div id="7d" class="weather">
+				<div class="title">
+					<h4>上海天气预报( 2013-08-25 11:00 发布 )</h4>
+					<a class="weather-future" href="#ww">
+					查看未来4-7天天气预报
+				</a>
+					<a class="weather-future none" href="#32">
+					收起未来4-7天天气预报
+				</a>
+
+					<a class="weather-legend" href="#w2">
+					天气图例
+				</a>
+				</div>
+
+				<div class="weather-item  ">
+					<table class="item-table ">
+						<tr>
+							<th colspan="2m">日期</th>
+							<th>天气现象</th>
+							<th>气温</th>
+							<th>风向</th>
+							<th>风力</th>
+						</tr>
+						<tr>
+							<td rowspan="2">25日星期日</td>
+							<td>白天</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+						<tr>
+
+							<td>黑夜</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+					</table>
+					<table class="item-table ">
+						<tr>
+							<th colspan="2m">日期</th>
+							<th>天气现象</th>
+							<th>气温</th>
+							<th>风向</th>
+							<th>风力</th>
+						</tr>
+						<tr>
+							<td rowspan="2">25日星期日</td>
+							<td>白天</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+						<tr>
+
+							<td>黑夜</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+					</table>
+					<table class="item-table ">
+						<tr>
+							<th colspan="2m">日期</th>
+							<th>天气现象</th>
+							<th>气温</th>
+							<th>风向</th>
+							<th>风力</th>
+						</tr>
+						<tr>
+							<td rowspan="2">25日星期日</td>
+							<td>白天</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+						<tr>
+
+							<td>黑夜</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+			<div id="w2" class="weather ">
+				<div class="title">
+					<h4>未来天气预报( 2013-08-25 11:00 发布 )</h4>
+
+				</div>
+
+				<div class="weather-item ">
+					<table class="item-table ">
+						<tr>
+							<th colspan="2m">日期</th>
+							<th>天气现象</th>
+							<th>气温</th>
+							<th>风向</th>
+							<th>风力</th>
+						</tr>
+						<tr>
+							<td rowspan="2">25日星期日</td>
+							<td>白天</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+						<tr>
+
+							<td>黑夜</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+					</table>
+					<table class="item-table ">
+						<tr>
+							<th colspan="2m">日期</th>
+							<th>天气现象</th>
+							<th>气温</th>
+							<th>风向</th>
+							<th>风力</th>
+						</tr>
+						<tr>
+							<td rowspan="2">25日星期日</td>
+							<td>白天</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+						<tr>
+
+							<td>黑夜</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+					</table>
+					<table class="item-table ">
+						<tr>
+							<th colspan="2m">日期</th>
+							<th>天气现象</th>
+							<th>气温</th>
+							<th>风向</th>
+							<th>风力</th>
+						</tr>
+						<tr>
+							<td rowspan="2">25日星期日</td>
+							<td>白天</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+						<tr>
+
+							<td>黑夜</td>
+							<td>中雨</td>
+							<td>高温34℃</td>
+							<td>西南风</td>
+							<td>3-4级</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
