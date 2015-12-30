@@ -17,7 +17,7 @@
 			width: 1200px;
 			margin: 0 auto;
 			min-height: 80%;
-			height: 1200px;
+			position: relative;
 			background-color: #fff;
 		}
 		
@@ -71,7 +71,26 @@
 
 	<body>
 		<div class="layout">
-
+				
+				<h4>overflow 的 padding-bottom 缺失现象</h4>
+				<div  style="width: 350px;height: 100px;padding: 100px 0;overflow: auto; " >
+					<img src="img/1.png"/>
+					
+				</div>
+				
+				
+				<div style="width: 600px;border: 1px solid brown;right: 0;position: absolute;top: 0;right: 0;">
+					<h4>两栏自适应布局</h4>
+					<div style="width: 200px;height: 500px;float: left;background-color: lightblue;">
+					左边
+					</div>
+					<div style="width: 400px;overflow: auto;">
+						<div>右边</div>
+						<img src="img/1.png"  />
+					</div>
+				</div>
+				
+				
 			<!--
              原因
 				：绝对定位元素不总是被父级overflow属性裁剪，尤其当overflow在绝对定位元素及其包含块之间的时候
