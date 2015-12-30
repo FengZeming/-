@@ -69,11 +69,14 @@
 			}
 			
 			#w2 {
-				display: none;
+				-webkit-transition: height .35s;
+    transition: height .35s;
+	 height: 0px;
+    overflow: hidden;
 			}
 			
 			.weather1:target #w2 {
-				display: block;
+				height:350px;
 			}
 			
 			.weather1:target .weather-future.none {
