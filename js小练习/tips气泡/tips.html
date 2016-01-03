@@ -7,7 +7,7 @@
 
 		<style type="text/css">
 			.tip-box {
-				display: none;
+				display: block;
 				position: absolute;
 				line-height: 25px;
 				background: lightblue;
@@ -23,6 +23,7 @@
 			.tip-box .tip-icon-guide {
 				position: absolute;
 				bottom: -8px;
+				left: -5px;
 				width: 0;
 				height: 0;
 				border-width: 8px;
@@ -42,7 +43,7 @@
 
 	<body>
 
-		<div class="tip-box">
+		<div id="tip-box" class="tip-box">
 			<div class="tip-content">
 				这是一个tip
 				<i class="tip-icon-guide"></i>
@@ -52,83 +53,42 @@
 		<input type="text" name="username" id="username" value="冯泽民" />
 
 		<script type="text/javascript">
-		
-		
-		   window.onload=function(){
-		   	
-		   	 var o =document.getElementById('username');
-		   	 var box = document.getElementsByClassName('tip-box')[0];
-		   	 	box.style.top=(getElementViewTop(o)-30)   +'px';
-		   	 	
-		   	 	box.style.left= (getElementViewLeft(o))   +'px';
-		   	 	box.style.display='block';
-		   	 	
-		   	console.log(getElementViewLeft(o));
-		   	
-		   };
-		
-		
-			function getPagearea() {　　　　
-				if (document.compatMode == "BackCompat") {　　　　　　
-					return {　　　　　　　　
-						width: Math.max(document.body.scrollWidth, 　document.body.clientWidth),
-						　　　　　　　　height: Math.max(document.body.scrollHeight, document.body.clientHeight)　　　　　　
+			window.onload = function() {
+				var o = document.getElementById('username');
+				var box = document.getElementById('tip-box');
+				box.style.top = (getElementViewTop(o) - 30) + 'px';
+				box.style.left = (getElementViewLeft(o)) + 'px';
+				console.log(getElementViewLeft(o));
+				　
+				function getElementViewLeft(element) {　　　　
+					var actualLeft = element.offsetLeft;　　　　
+					var current = element.offsetParent;　　　　
+					while (current !== null) {　　　　　　
+						actualLeft += current.offsetLeft;　　　　　　
+						current = current.offsetParent;　　　　
 					}　　　　
-				} else {　　　　　　
-					return {　　　　　　　　
-						width: Math.max(document.documentElement.scrollWidth, 　document.documentElement.clientWidth),
-						　　　　　　　　height: Math.max(document.documentElement.scrollHeight, 　document.documentElement.clientHeight)　　　　　　
+					if (document.compatMode == "BackCompat") {　　　　　　
+						var elementScrollLeft = document.body.scrollLeft;　　　　
+					} else {　　　　　　
+						var elementScrollLeft = document.documentElement.scrollLeft;　　　　
 					}　　　　
+					return actualLeft - elementScrollLeft;　　
 				}　　
-			}
-
-			function getElementLeft(element) {　　　　
-				var actualLeft = element.offsetLeft;　　　　
-				var current = element.offsetParent;　　　　
-				while (current !== null) {　　　　　　
-					actualLeft += current.offsetLeft;　　　　　　
-					current = current.offsetParent;　　　　
-				}　　　　
-				return actualLeft;　　
-			}　　
-			function getElementTop(element) {　　　　
-				var actualTop = element.offsetTop;　　　　
-				var current = element.offsetParent;　　　　
-				while (current !== null) {　　　　　　
-					actualTop += current.offsetTop;　　　　　　
-					current = current.offsetParent;　　　　
-				}　　　　
-				return actualTop;　　
-			}
-			　
-			function getElementViewLeft(element) {　　　　
-				var actualLeft = element.offsetLeft;　　　　
-				var current = element.offsetParent;　　　　
-				while (current !== null) {　　　　　　
-					actualLeft += current.offsetLeft;　　　　　　
-					current = current.offsetParent;　　　　
-				}　　　　
-				if (document.compatMode == "BackCompat") {　　　　　　
-					var elementScrollLeft = document.body.scrollLeft;　　　　
-				} else {　　　　　　
-					var elementScrollLeft = document.documentElement.scrollLeft;　　　　
-				}　　　　
-				return actualLeft - elementScrollLeft;　　
-			}　　
-			function getElementViewTop(element) {　　　　
-				var actualTop = element.offsetTop;　　　　
-				var current = element.offsetParent;　　　　
-				while (current !== null) {　　　　　　
-					actualTop += current.offsetTop;　　　　　　
-					current = current.offsetParent;　　　　
-				}　　　　
-				if (document.compatMode == "BackCompat") {　　　　　　
-					var elementScrollTop = document.body.scrollTop;　　　　
-				} else {　　　　　　
-					var elementScrollTop = document.documentElement.scrollTop;　　　　
-				}　　　　
-				return actualTop - elementScrollTop;　　
-			}
+				function getElementViewTop(element) {　　　　
+					var actualTop = element.offsetTop;　　　　
+					var current = element.offsetParent;　　　　
+					while (current !== null) {　　　　　　
+						actualTop += current.offsetTop;　　　　　　
+						current = current.offsetParent;　　　　
+					}　　　　
+					if (document.compatMode == "BackCompat") {　　　　　　
+						var elementScrollTop = document.body.scrollTop;　　　　
+					} else {　　　　　　
+						var elementScrollTop = document.documentElement.scrollTop;　　　　
+					}　　　　
+					return actualTop - elementScrollTop;　　
+				}
+			};
 		</script>
 
 	</body>

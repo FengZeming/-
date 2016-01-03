@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<style type="text/css">
+			body {
+				height: 2000px;
+				margin: 10px;
+				padding: 100px;
+				border: 30px solid #999;
+				background: #ddd;
+			}
+			
+			#current {
+				width: 400px;
+				height: 200px;
+				margin: 10px;
+				padding: 20px;
+				border: 30px solid lemonchiffon;
+				background: lightcoral;
+				position: relative;
+				
+			}
+			
+			#parent {
+				width: 800px;
+				height: 300px;
+				/*margin:   10px;*/
+				padding: 50px;
+				background: lightsteelblue;
+				border: 30px solid lightseagreen;
+				
+			}
+			
+			span {
+				position: absolute;
+				text-align: right;
+				margin-left: 750px;
+				margin-top: -300px;
+				font-size: 40px;
+				font-weight: bold;
+			}
+			
+			p {
+				background: #20B2AA;
+				margin: 0;
+				line-height: 24px;
+			}
+			
+			.name {
+				font-size: 30px;
+				font-weight: bold;
+				color: #000;
+			}
+		</style>
+		<div id="parent">
+			<div style="  margin-bottom: 10px ;   height: 10px;  border: 10px solid saddlebrown; padding: 10px; background: lavenderblush;   ">
+			</div>
+			<div id="current"></div>
+		</div>
+
+				<span>
+			 	#parent
+			 </span>
+
+		<script>
+			var current = document.getElementById("current");
+			current.innerHTML = "<p class='name'>#current</p>" +
+				"<p>Browser : " + navigator.userAgent + "</p>" +
+				"<p>offsetLeft : " + current.offsetLeft + "</p>" +
+				"<p>offsetTop : " + current.offsetTop + "</p>";
+			;
+		</script>
+
+	</body>
+
+</html>
