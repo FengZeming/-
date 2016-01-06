@@ -148,12 +148,9 @@
 					return isCheck;
 				},
 				complete: function() {
-				//	var allValues = m.getForms.call();
+					var allValues = m.getForms.call();
 					var isCheck = true;
-					
-					m.eidtHint('password', 'error');
-					
-					/*for (var i = 0, l = $t.info.nameList.length; i < l; i++) {
+					for (var i = 0, l = $t.info.nameList.length; i < l; i++) {
 						var sName = $t.info.nameList[i];
 						var sRegName = $t.info.regNameList[i];
 						if (!m.getRegList[sRegName].test(allValues[sName])) {
@@ -162,7 +159,7 @@
 						} else {
 							m.eidtHint(sName, 'success')
 						}
-					}*/
+					}
 					return isCheck;
 				}
 			},
@@ -260,7 +257,7 @@
 					default:
 						break;
 				}
-				return oHintBox.attr('style', 'display: block;');
+			 oHintBox.show();
 			},
 			//添加即时校验
 			addInstant: function() {
