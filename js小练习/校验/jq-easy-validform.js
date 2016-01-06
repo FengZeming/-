@@ -257,7 +257,7 @@
 					default:
 						break;
 				}
-			 oHintBox.show();
+			 oHintBox.attr('style','visibility:visible');
 			},
 			//添加即时校验
 			addInstant: function() {

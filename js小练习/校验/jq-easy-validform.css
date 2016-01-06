@@ -55,7 +55,7 @@
 }
 /*inline样式*/
 .easy-validform {
-	display: none;
+	visibility: hidden;
 	height: 30px;
 	line-height: 30px;
 	padding-left: 18px;
