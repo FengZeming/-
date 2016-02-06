@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+			
+			.dog-tabs {
+				margin: 0 auto;
+				width: 500px;
+				height: 500px;
+			}
+			
+			.dog-tabs-btn {
+				height: 30px;
+				line-height: 29px;
+				overflow: hidden;
+			}
+			
+			.dog-tabs-btn li {
+				float: left;
+				margin-right: 2px;
+			}
+			
+			.dog-tabs-btn a {
+				position: relative;
+				display: block;
+				padding: 0 15px;
+				border: 1px solid #ccc;
+				border-bottom: none;
+				border-radius: 4px 4px 0 0;
+				background-color: #eee;
+			}
+			
+			.dog-tabs-btn a.curr {
+				background-color: #fff;
+				z-index: 2;
+			}
+			
+			.dog-tabs-panes {
+				position: relative;
+				top: -1px;
+				border: 1px solid #ccc;
+			}
+			
+			.dog-tabs-panes li {
+				display: none;
+				padding: 100px 5px;
+			}
+			
+			.dog-tabs-panes li.curr {
+				display: block;
+			}
+			
+			.load {}
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="dog-tabs">
+			<ul class="dog-tabs-btn">
+				<li class="curr"><a href="javascript:;">html</a></li>
+				<li><a href="javascript:;">css</a></li>
+				<li><a href="javascript:;">javascript</a></li>
+				<li><a href="javascript:;">饥人谷</a></li>
+			</ul>
+			<ul class="dog-tabs-panes">
+				<li class="curr">块元素？行内元素？</li>
+				<li>定位？浮动？overflow?</li>
+				<li>对象？函数？计时器？</li>
+				<li>若愚？小青？墨凌？7班？二师兄？</li>
+			</ul>
+		</div>-->
+		<script src="zquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dogTabs.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				dog.tabs({
+					btns: ['html', 'css', 'js', '饥人谷'],
+					panes: ['块元素？行内元素？', '定位？浮动？', '对象？函数？计时器？', '若愚？墨凌？小青？7班？二师兄？']
+				});
+			});
+		</script>
+	</body>
+
+</html>
