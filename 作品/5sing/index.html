@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>中国原创音乐基地 5SING</title>
+		<meta name="keywords" content="中国原创音乐基地，原创，伴奏，免费伴奏，原创音乐，翻唱，网络歌曲，手机铃声，翻唱音乐，手机彩铃，网络音乐，5sing" />
+		<meta name="description" content="中国原创音乐基地，数字音乐网站，汇集了大量的网络歌手的原创音乐歌曲及翻唱歌曲，提供大量歌曲的伴奏以及歌词免费下载，将喜爱的音乐或者歌曲作为手机彩铃下载" />
+		<link rel="stylesheet" type="text/css" href="css/g-normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/g-bgpic.css" />
+		<link rel="stylesheet" type="text/css" href="css/mod/header-mod.css" />
+		<link rel="stylesheet" type="text/css" href="css/mod/slider-mod.css" />
+		<link rel="stylesheet" type="text/css" href="css/mod/pop-mod.css" />
+		<link rel="stylesheet" type="text/css" href="css/mod/more-mod.css" />
+		<link rel="stylesheet" type="text/css" href="css/mod/tab-mod.css" />
+		<link rel="stylesheet" type="text/css" href="css/mod/flmenu-mod.css" />
+		<link rel="stylesheet" type="text/css" href="css/mod/footer-mod.css" />
+		<link rel="stylesheet" type="text/css" href="css/g-reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<!--
+    	作者：冯泽民
+    	描述：实际项目中会使用基于nodejs前端构建工具压缩合并css所以这里把页面的各个部分模块化
+    -->
+	</head>
+	<body>
+		<!--头部开始-->
+		<div class="p-header-box fix zx2">
+			<div class="m-hd-col">
+				<div class="lyt960 ovh">
+					<div class="m-hd-logo fl ">
+						<a href="#"><img src="img/center_logo.png" alt="中国原创音乐基地" /></a>
+					</div>
+					<div class="m-hd-se fl ">
+						<input class="m-hd-seipt dib " type="text" name="search" placeholder="歌曲/歌单/会员" />
+						<a class="m-hd-sebtn rel dib bgi i-se " href="javascript:;"></a>
+					</div>
+					<ul class="m-hd-nav fr ovh f14 ">
+						<li><a href="javascript:;">登录</a></li>
+						<li><a href="javascript:;">注册</a></li>
+						<li>
+							<a href="javascript:;"><i class="m-hd-up rel dib bgi i-up "></i>上传</a>
+							<span class="abs zx2 dn">
+								<a href="#">上传原创</a>
+								<a href="#">上传翻唱</a>
+								<a href="#">上传伴奏</a>
+								<a href="#">歌曲管理</a>
+							</span>
+						</li>
+						<li>
+							<a href="javascript:;"><i class="m-hd-app rel dib bgi i-app "></i>APP</a>
+							<span class="abs zx2 dn lh0">
+								<img  src="img/5singcode.png" width="100" height="100"/>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--菜单-->
+			<div class="m-hd-nav-col">
+				<div class="lyt960 ovh">
+					<ul class="m-hd-navlist fl ovh ">
+						<li class="curr"><a href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">原创</a></li>
+						<li><a href="javascript:;">翻唱</a></li>
+						<li><a href="javascript:;">伴奏</a></li>
+						<li><a href="javascript:;">榜单</a></li>
+						<li><a href="javascript:;">歌单</a></li>
+						<li class="split">|</li>
+						<li><a href="javascript:;">音乐人</a></li>
+						<li><a href="javascript:;">活动</a></li>
+						<li><a href="javascript:;">圈子</a></li>
+						<li><a href="javascript:;">音乐现场</a></li>
+						<li><a href="javascript:;">众筹</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--头部结束-->
+
+		<!--banner开始-->
+		<div class="p-banner-box">
+			<div class="lyt960 ovh">
+				<div class="m-slider fl">
+					<a class="m-slider-prev-btn i-prev-prt" href="javascript:;">
+						<i class="btn wh16 bgi-nav i-prev">上一张</i>
+					</a>
+					<a class="m-slider-next-btn i-next-prt" href="javascript:;">
+						<i class="btn wh16 bgi-nav i-next">下一张</i>
+					</a>
+					<div class="m-slider-dot">
+						<ul>
+							<li class="curr"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="m-slider-list">
+						<ul>
+							<li>
+								<a href="#"><img src="img/pic-scroll/1.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/pic-scroll/2.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/pic-scroll/3.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/pic-scroll/4.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/pic-scroll/5.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/pic-scroll/6.jpg" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="p-reco-col fr">
+					<div class="ovh pr20">
+						<h2 class="p-reco-title fl bgi-cont btn">推荐资讯</h2>
+						<div class="fr">
+							<a class="bgi-nav btn  wh16 i-prev" href="javascript:;">上一页</a>
+							<a class="bgi-nav btn  wh16 i-next" href="javascript:;">下一页</a>
+						</div>
+					</div>
+					<ul class="p-reco-list">
+						<li><a class="ell" href="#"><i>·</i><em>【<span>专题</span>】</em>2015年原创古风精选 50首</a></li>
+						<li><a class="ell" href="#"><i>·</i><em>【<span>歌词</span>】</em>《梦遣看花人》——余梦嗟归人，转醒看花瘦。</a></li>
+						<li><a class="ell" href="#"><i>·</i><em>【<span>专题</span>】</em>寒亭有雪，寂灭之间</a></li>
+						<li><a class="ell" href="#"><i>·</i><em>【<span>专题</span>】</em>12月原创古风精选 30首</a></li>
+						<li><a class="ell" href="#"><i>·</i><em>【<span>专题</span>】</em>普通的disco我们普通地摇~</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--banner结束-->
+
+		<!--内容开始-->
+		<div class="p-content-box">
+			<div class="lyt960">
+				<!--热门音乐人 start-->
+				<div class="m-pop pl15-20 mt30">
+					<div class="m-pop-title-col ovh">
+						<h2 class="m-pop-title fl"><i class="bgi-cont btn wh30 i-hot"></i>热门音乐人</h2>
+						<a class="m-more-def fr f14" href="#"><i class="bgi-nav btn wh16"></i>More</a>
+					</div>
+					<div class="m-pop-content-col ovh">
+						<dl class="p-hot-alone-col fl ">
+							<dt class="p-hot-alone-pic rel">
+									<a href="#"><img src="img/hot-section/daren_210_210.jpg" width="210" height="210" alt="Keyee"/></a>
+							<em class="p-hot-val alone abs b0 l0 gf opy">播放热门歌曲<i class="abs r0 bgi-nav btn wh20 i-lsen "></i></em>
+							</dt>
+							<dd class="p-hot-alone-name">
+								<strong><a class="g-ft14" href="#">=_=困白--smili</a></strong>
+							</dd>
+							<dd class="p-hot-alone-fame">歌手</dd>
+						</dl>
+						<div class="p-hot-list-col fl ">
+							<ul class="fl">
+								<li>
+									<a href="#">
+										<img src="img/hot-section/list_1_120_120.jpg" width="120" height="120" alt="作曲太平" />
+									</a>
+									<em class="p-hot-val abs b0 l0 gf opy">播放热门歌曲<i class="abs r0 bgi-nav btn wh20 i-lsen "></i></em>
+									<h4><a href="#">作曲太平</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_2_120_120.jpg" width="120" height="120" alt="邓川瓶子" /></a>
+									<h4><a href="#">邓川瓶子</a></h4>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/hot-section/list_3_120_120.jpg" width="120" height="120" alt="Momily" />
+									</a>
+									<em class="p-hot-val abs b0 l0 gf opy">播放热门歌曲<i class="abs r0 bgi-nav btn wh20 i-lsen "></i></em>
+									<h4><a href="#">Momily</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_4_120_120.jpg" width="120" height="120" alt="—漂移先锋—" /></a>
+									<h4><a href="#">—漂移先锋—</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_5_120_120.jpg" width="120" height="120" alt="Erikaaaaaaa" /></a>
+									<h4><a href="#">Erikaaaaaaa</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_6_120_120.jpg" width="120" height="120" alt="骆俊宇" /></a>
+									<h4><a href="#">骆俊宇</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_7_120_120.jpg" width="120" height="120" alt="Syantis" /></a>
+									<h4><a href="#">Syantis</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_8_120_120.jpg" width="120" height="120" alt="阿九石道" /></a>
+									<h4><a href="#">阿九石道</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_9_120_120.jpg" width="120" height="120" alt="风小筝（覃沐曦）" /></a>
+									<h4><a href="#">风小筝（覃沐曦）</a></h4>
+								</li>
+								<li>
+									<a href="#"><img src="img/hot-section/list_10_120_120.jpg" width="120" height="120" alt="Keyee" /></a>
+									<h4><a href="#">Keyee</a></h4>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--热门音乐人 end-->
+
+				<!--音乐现场 start-->
+				<div class="m-pop mt30 pl0">
+					<div class="m-pop-title-col ovh  pl20">
+						<h2 class="m-pop-title fl "><i class="bgi-cont btn wh30 i-live"></i>音乐现场</h2>
+						<a class="m-more-well fr " href="#"><i class="bgi btn"></i>更多精彩</a>
+					</div>
+					<div class="m-pop-content-col ovh ">
+						<dl class="p-live">
+							<dt class="rel">
+								<a href="#"><img src="img/live-mod/list_1_300_200.jpg" width="210" height="140" alt="田松林"/></a>
+								<span class="mark live"></span>
+								<span class="p-live-val abs db opy" title="进入直播现场"><i class="bgi btn vm i-scene"></i></span>
+							</dt>
+							<dd class="b ell"><a href="#">袁雨桐</a></dd>
+							<dd class="ell g9" title="田松林直播演唱《听雨》"><i class="rel bgi btn i-crowd"></i>143个观众</dd>
+							<dd class="ell g9">这个妹子的家里藏着个汉子</dd>
+						</dl>
+						<dl class="p-live">
+							<dt class="rel">
+								<a href="#"><img src="img/live-mod/list_2_300_200.jpg" width="210" height="140" alt="5singLIVE"/></a>
+								<span class="mark review">回顾</span>
+								<span class="p-live-val abs db opy" title="进入直播现场"><i class="bgi btn vm i-scene"></i></span>
+							</dt>
+							<dd class="b ell"><a href="#">5singLIVE</a></dd>
+							<dd class="ell g9" title="武林大会冥月现场演唱《心剑游龙》">武林大会冥月现场演唱《心剑游龙》</dd>
+							<dd class="ovh g9"><span class="fl">20150809</span><span class="fr"><i class="rel dib i-play"></i><em>4831</em>&nbsp;播放</span></dd>
+						</dl>
+						<dl class="p-live">
+							<dt class="rel"><a href="#"><img src="img/live-mod/list_3_300_200.jpg" width="210" height="140" alt="Fun.范恩"/></a><span class="mark review">回顾</span></dt>
+							<dd class="b ell"><a href="#">Fun.范恩</a></dd>
+							<dd class="ell g9" title="范恩直播演唱《sparksfly》">范恩直播演唱《sparksfly》</dd>
+							<dd class="ovh g9"><span class="fl">20150609</span><span class="fr"><i class="rel dib i-play"></i><em>3867</em>&nbsp;播放</span></dd>
+						</dl>
+						<dl class="p-live">
+							<dt class="rel"><a href="#"><img src="img/live-mod/list_4_300_200.jpg" width="210" height="140" alt="Caroline_Sue"/></a><span class="mark review">回顾</span></dt>
+							<dd class="b ell"><a href="#">Caroline_Sue</a></dd>
+							<dd class="ell g9" title="caroline_sue直播演唱《giveyouwhatyoulike》">caroline_sue直播演唱《giveyouwhatyoulike》</dd>
+							<dd class="ovh g9"><span class="fl">20150609</span><span class="fr"><i class="rel dib i-play"></i><em>2978</em>&nbsp;播放</span></dd>
+						</dl>
+					</div>
+				</div>
+				<!--音乐现场 end-->
+				<!--推荐 start-->
+				<div class="ovh">
+					<!--原创 翻唱 start -->
+					<div class="fl w650">
+						<div class="m-pop w610 ">
+							<div class="m-pop-title-col ovh ">
+								<h2 class="m-pop-title fl "><i class="bgi-cont btn wh30 "></i>原创推荐</h2>
+								<a class="m-more-play fl " href="#"><i class="bgi-nav btn"></i>播放全部</a>
+								<a class="m-more-cg fr " href="#"><i class="bgi-nav btn "></i>换一批</a>
+							</div>
+							<div class="m-pop-content-col">
+								<dl class="p-song">
+									<dt class="p-song-name ell "><a href="#">情人不会表白</a></dt>
+									<dd class="p-song-artist"><a href="#">=_=困白--smili</a></dd>
+									<dd class="p-song-pop"><span class="b">1227</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="p-song-name ell "><a href="#">烟灰</a></dt>
+									<dd class="p-song-artist"><a href="#">三亩地</a></dd>
+									<dd class="p-song-pop"><span class="b">1419</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">【雁引歌】天地神风鉴</a></dt>
+									<dd class="p-song-artist"><a href="#">平纱落雁音乐团队</a></dd>
+									<dd class="p-song-pop"><span class="b">5985</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">次元传说（带花絮版）</a></dt>
+									<dd class="p-song-artist"><a href="#">绯村柯北</a></dd>
+									<dd class="p-song-pop"><span class="b">4431</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">叶问</a></dt>
+									<dd class="p-song-artist"><a href="#">王 蓉</a></dd>
+									<dd class="p-song-pop"><span class="b">5493</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">氷雪の独舞</a></dt>
+									<dd class="p-song-artist"><a href="#">小爱爱爱妈</a></dd>
+									<dd class="p-song-pop"><span class="b">20595</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">外套</a></dt>
+									<dd class="p-song-artist"><a href="#">邓川瓶子</a></dd>
+									<dd class="p-song-pop"><span class="b">9915</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">《门》（电影《小门神》推广曲）</a></dt>
+									<dd class="p-song-artist"><a href="#">好妹妹乐队</a></dd>
+									<dd class="p-song-pop"><span class="b">11001</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">万象因心（《万象因心》专辑同名主打歌）</a></dt>
+									<dd class="p-song-artist"><a href="#">吾恩</a></dd>
+									<dd class="p-song-pop"><span class="b">36159</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">玩具</a></dt>
+									<dd class="p-song-artist"><a href="#">_回音哥_</a></dd>
+									<dd class="p-song-pop"><span class="b">28077</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+							</div>
+						</div>
+						<div class="w610 m-pop mt0 bt0">
+							<div class="ovh m-pop-title-col">
+								<h2 class="fl m-pop-title"><i class="bgi-cont btn wh30  i-cover"></i>翻唱推荐</h2>
+								<a class="fl m-more-play" href="#"><i class="bgi-nav btn"></i>播放全部</a>
+								<a class="fr m-more-cg" href="#"><i class="bgi-nav btn"></i>换一批</a>
+							</div>
+							<div class="m-pop-content-col">
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a  href="#">『古韵』霁夜茶</a></dt>
+									<dd class="ell p-song-artist"><a href="#">坠啦啦</a></dd>
+									<dd class="p-song-pop"><span class="b">7674</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">転生 昇天抄</a></dt>
+									<dd class="ell p-song-artist"><a href="#">圈圈菌 （⊙.⊙）</a></dd>
+									<dd class="p-song-pop"><span class="b">1035</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">【HBD唠嗑】My selfish heart</a></dt>
+									<dd class="ell p-song-artist"><a href="#">胸口长满腿毛的硬汉山由君</a></dd>
+									<dd class="p-song-pop"><span class="b">2646</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">她她她【feat：阡陌】</a></dt>
+									<dd class="p-song-artist"><a href="#">苏格小樱桃</a></dd>
+									<dd class="p-song-pop"><span class="b">1458</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">▍SPY ◆ Show ▍谁也不知道（2.ver）</a></dt>
+									<dd class="p-song-artist"><a href="#">┃SPY ◆ Show┃</a></dd>
+									<dd class="p-song-pop"><span class="b">1155</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">画情</a></dt>
+									<dd class="p-song-artist"><a href="#">孙英俊</a></dd>
+									<dd class="p-song-pop"><span class="b">3162</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">さよならミッドナイト-Acoustic.ver-</a></dt>
+									<dd class="p-song-artist"><a href="#">炸斯塔</a></dd>
+									<dd class="p-song-pop"><span class="b">2379</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">Thinking Out Loud</a></dt>
+									<dd class="p-song-artist"><a href="#">Livia李泫憙</a></dd>
+									<dd class="p-song-pop"><span class="b">11001</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">《双生》ED《镜像人之死》剧情版</a></dt>
+									<dd class="p-song-artist"><a href="#">筷子菌</a></dd>
+									<dd class="p-song-pop"><span class="b">2382</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+								<dl class="p-song">
+									<dt class="ell p-song-name"><a href="#">『English Ver.』Eyes, Nose, Lips</a></dt>
+									<dd class="p-song-artist"><a href="#">时砂Charloooo</a></dd>
+									<dd class="p-song-pop"><span class="b">6828</span>&nbsp;次播放</dd>
+									<dd class="p-song-btn"><a class="bgi-nav btn i-song" href="#">试听</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<!--原创 翻唱 end-->
+					<div class="fr w290 m-tab">
+						<div class="ovh bgi-cont m-tab-title-col  p-audi-title">
+							<a class="fr m-more-play" href="#"><i class="bgi-nav btn"></i>播放全部</a>
+							<ul class="m-tab-list ovh">
+								<li class="curr"><a href="javascript:;">原创候选</a></li>
+								<li><a href="javascript:;">翻唱候选</a></li>
+								<li><a href="javascript:;">原创排行榜</a></li>
+							</ul>
+						</div>
+						<div class="ovh m-tab-content-col p-audi-col">
+							<ul class="p-audi-list">
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/1_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">艾尔战记</a>
+										<span class="ovh"><a class="fl ell g9" href="#">祈Inory</a><em class="fr g9"><s class="b">582</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/2_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">【编曲作品】皆斩（收录于小千专辑千次元）</a>
+										<span class="ovh"><a class="fl ell g9" href="#">GMN-宏宇</a><em class="fr g9"><s class="b">765</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/3_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">黑·风流年间</a>
+										<span class="ovh"><a class="fl ell g9" href="#">五色石南叶</a><em class="fr g9"><s class="b">1968</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/4_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">放浪</a>
+										<span class="ovh"><a class="fl ell g9" href="#">王洋1976</a><em class="fr g9"><s class="b">186</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/5_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">给未来的你唱首歌</a>
+										<span class="ovh"><a class="fl ell g9" href="#">支爽MrZero </a><em class="fr g9"><s class="b">171</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/6_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">《抑郁症》</a>
+										<span class="ovh"><a class="fl ell g9" href="#">秦欢的欢乐园</a><em class="fr g9"><s class="b">525</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/7_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">【-古-】『同人』漠言殇（微小说《睡美人..</a>
+										<span class="ovh"><a class="fl ell g9" href="#">正版凉夕</a><em class="fr g9"><s class="b">756</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/8_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">归乡Ⅱ</a>
+										<span class="ovh"><a class="fl ell g9" href="#">whtlook</a><em class="fr g9"><s class="b">330</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/9_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">认输</a>
+										<span class="ovh"><a class="fl ell g9" href="#">Shelly佳.</a><em class="fr g9"><s class="b">495</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li>
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/10_40_40.jpg"/>
+									</span>
+									<span class="dib p-audi-attr">
+										<a class="db b" href="#">【重编曲】黑白天鹅-Snow Ver.【言和】</a>
+										<span class="ovh"><a class="fl ell g9" href="#">JUSF周存</a><em class="fr g9"><s class="b">543</s><s>&nbsp;次播放</s></em></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+							</ul>
+							<div class="fr p-audi-pg">
+								<a class="bgi-nav btn vm wh16 i-prevb" href="javascript:;">上一页</a>
+								<a class="bgi-nav btn vm wh16 i-nextb" href="javascript:;">下一页</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--推荐 end-->
+				<div class="m-pop ovh pt10 pr0 ">
+					<div class="m-tab fl w630 mt0">
+						<div class="m-tab-title-col ovh">
+							<a class="m-more-play fr" href="#"><i class="bgi-nav btn"></i>播放全部</a>
+							<ul class="m-tab-list ovh f14">
+								<li class="curr"><a href="javascript:;">歌单</a></li>
+								<li><a href="javascript:;">专辑</a></li>
+							</ul>
+						</div>
+						<div class="m-pop-content-col ovh mt0">
+							<ul class="p-album ovh">
+								<!--
+									<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/1_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>9217</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-lsen abs db t0"><span class="dib_vm lh20 gf"><i class="bgi-nav btn wh20 i-lsen"></i><br />播放歌单</a>
+									<a class="db" href="#">123</a>
+								</li>-->
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/1_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf dn"><i class="bgi-cont btn i-pop"></i>9217</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-lsen abs db t0"><span class="dib_vm lh20 gf"><i class="bgi-nav btn wh20 i-lsen"></i><br />播放歌单</a>
+									<a class="p-ablum-des db tc ell b" href="#">英翻达人</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/2_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>54020</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">1月原创古风精选30首</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/3_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>717</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">以花为名</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/4_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>7902</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">『古城风韵』</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/5_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>6912</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">二次元的那些事</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/6_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>52626</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">2015年原创古风精选 50首（下）</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/7_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>12711</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">有辨识度的美好声音</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/8_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>5021</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">她很漂亮</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/9_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>11898</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b" href="#">暖茶赏寒风</a>
+								</li>
+								<li>
+									<span class="p-ablum-pic db rel">
+										<img src="img/album-mod/10_124_124.jpg" width="111" height="111"/>
+									<em class="p-ablum-value abs b0 l0 gf"><i class="bgi-cont btn i-pop"></i>16823</em>
+									</span>
+									<a class="p-ablum-bg abs t0 l0 zx2" href="#"></a>
+									<a class="p-ablum-des db tc ell b " href="#">言醉之眼罪之皆情坠</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="m-tab fr w290 mt0">
+						<div class="m-tab-title-col ovh">
+							<ul class="m-tab-list ovh f14">
+								<li class="curr"><a href="javascript:;">分享最多</a></li>
+								<li><a href="javascript:;">传播最快</a></li>
+							</ul>
+						</div>
+						<div class="m-pop-content-col ovh mt0">
+							<ul class="p-audi-list">
+								<li class="wh55">
+									<span class="dib ell p-audi-pic ">
+										<img src="img/top-mod/1_55_55.jpg"/>
+									</span>
+									<span class="dib p-audi-attr pl5">
+										<a class="db b" href="#">传灯 ft.慕寒</a>
+										<span class="ovh"><a class="fl ell g9" href="#">洪尘</a></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li class="wh55">
+									<span class="dib ell p-audi-pic ">
+										<img src="img/top-mod/2_55_55.jpg"/>
+									</span>
+									<span class="dib p-audi-attr pl5">
+										<a class="db b" href="#">莹离天涯（年轮原曲）——韩莹莹·离玉堂</a>
+										<span class="ovh"><a class="fl ell g9" href="#">抚剑悲歌振林木</a></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li class="wh55">
+									<span class="dib ell p-audi-pic">
+										<img src="img/top-mod/3_55_55.jpg"/>
+									</span>
+									<span class="dib p-audi-attr pl5">
+										<a class="db b" href="#">别在说我不想（我写给张亚苹）</a>
+										<span class="ovh"><a class="fl ell g9" href="#">网络红人小平</a></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li class="wh55">
+									<span class="dib ell p-audi-pic ">
+										<img src="img/top-mod/4_55_55.jpg"/>
+									</span>
+									<span class="dib p-audi-attr pl5">
+										<a class="db b" href="#">【黄子韬应援曲】That's Why I'm Here</a>
+										<span class="ovh"><a class="fl ell g9" href="#">韬总攻</a></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+								<li class="wh55">
+									<span class="dib ell p-audi-pic ">
+										<img src="img/top-mod/5_55_55.jpg"/>
+									</span>
+									<span class="dib p-audi-attr pl5">
+										<a class="db b" href="#">¤韩翻¤-[NU ABO]</a>
+										<span class="ovh"><a class="fl ell g9" href="#">—M.Y—混音翻唱团</a></span>
+									</span>
+									<span class="rel dib p-audi-btn">
+									<a class="bgi-nav btn i-song" href="#">试听</a>
+									</span>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容结束-->
+
+		<!--脚部开始-->
+		<div class="p-footer-box ">
+			<div class="m-ft-service">
+				<div class="lyt960 ovh">
+					<dl class="m-ft-nav">
+						<dt><h2 class="bgi-logo btn  i-flogo"></h2></dt>
+						<dd>
+							<ul class="ovh">
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">权利声明</a></li>
+								<li><a href="#">商务合作</a></li>
+								<li><a href="#">合作伙伴</a></li>
+								<li><a href="#">诚聘英才</a></li>
+								<li><a href="#">联系我们</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="m-ft-partner">
+						<dt><h2 class="n">合作伙伴</h2></dt>
+						<dd>
+							<a class="bgi-logo btn i-kugou" href="#">酷狗音乐</a>
+							<a class="bgi-logo btn i-lexiang" href="#">乐享12350</a>
+							<a class="bgi-logo btn i-aiyy" href="#">爱音乐</a>
+							<a class="bgi-logo btn i-woyy" href="#">沃音乐</a>
+						</dd>
+					</dl>
+					<dl class="m-ft-topic">
+						<dt><h2 class="n">实用话题</h2></dt>
+						<dd>
+							<ul class="ovh">
+								<li><a href="#">1、网站违规广告细则说明</a></li>
+								<li><a href="#">2、申请网站推荐歌手和明星会员</a></li>
+								<li><a href="#">3、5sing客户端下载</a></li>
+								<li><a href="#">4、申请网站推荐歌曲</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="m-ft-copyright g9 pt20">
+				<div class="lyt1000">
+					<p>5sing中国原创音乐基地 http://5sing.kugou.com/<a class="dib g9 ml10" href="#">粤ICP备09017694号</a></p>
+					<p>网络文化经营许可证：粤网文[2013]0233-083号 | 信息网络传播视听节目许可证：1910564号 | 增值电信业务经营许可证：粤B2-20060339号 | 营业性演出许可证：穗天演440106026</p>
+					<p>广州酷狗计算机科技有限公司版权所有Copyright (C) 2015 KuGou.All Rights Reserved 违法和不良信息举报：www.12377.cn 举报电话：12377</p>
+				</div>
+			</div>
+		</div>
+		<!--脚部结束-->
+
+		<!--浮动菜单-->
+		<ul class="m-flmenu ">
+			<li class="m-flmenu-code ">
+				<a class="bgi-flmenu btn i-fmcode" href="javascript:;">5sing二维码</a>
+				<span class=" abs dn">
+					 <em class="db"> <i class="bgi-flmenu lh20 btn i-down">二维码</i> </em>
+					 <img class="f0 mb-1" src="img/qrcode.png" alt="二维码"  width="144" height="144"/>
+				</span>
+			</li>
+			<li><a class="bgi-flmenu btn i-fmback" href="javascript:;">用户反馈</a></li>
+			<li><a class="bgi-flmenu btn i-fmtop" href="javascript:;">返回顶部</a></li>
+		</ul>
+
+	</body>
+
+</html>
